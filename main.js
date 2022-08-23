@@ -113,3 +113,12 @@ const arraysome = [1, 2, 5, 6, 1, 3]
 //Quiero que me diga si dentro del array tengo algun numero entero
 const evento = arraysome.some(e => e % 2 === 0)
 console.log(evento)
+
+//.reduce agarra un array y me devuelve un solo valor
+const arrayNub = [1, 3 , 2, 4]
+const initialValue= 0
+const sumWithinitial =  arrayNub.reduce(
+    (previousValue, currentValue) => previousValue + currentValue,
+    initialValue
+);
+console.log(sumWithinitial)
