@@ -1,8 +1,10 @@
 //Funciones de orden superior
 
+// Ejemplo: hacer que los numeros dentro del array tenga el doble de valor
 //.map
-var numbers= [1,5,10,15];
-var doubles = numbers.map(function(x){ // x sustituye cada elemento del array numers
-    return x *2;
+let numbers= [1,5,10,15];
+
+let double = numbers.map(function(x){
+    return x*2;
 })
-console.log(doubles)
+console.log(double)
