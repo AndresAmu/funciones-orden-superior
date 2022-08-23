@@ -1,7 +1,7 @@
 //Funciones de orden superior
 
 // Ejemplo: hacer que los numeros dentro del array tenga el doble de valor
-//.map
+//.map recorre e imprime
 let numbers = [1, 5, 10, 15];
 
 let double = numbers.map(function (x) {
@@ -18,7 +18,7 @@ var double2 = numbers.map((x) => {
 })
 console.log(double2)
 
-//ForEach
+//ForEach recorre pero no tre nada
 
 //Imprimir una linea por cada elemento
 
@@ -28,16 +28,45 @@ double.forEach(function (d) {
 
 double.forEach(d => console.log(d))
 
-//.filter
+//.filter filtra
 
 const paises = ['Argentina', 'Uruguay', 'Brasil', 'Chile', 'Peru']
 
-//Forma larfa con function
-const result1 = paises.filter(function(pais){
+//Forma larga con function
+const result1 = paises.filter(function (pais) {
     return pais.length > 5
 })
 console.log(result1)
 
 //Forma corta con funcion =>
-const result2 = paises.filter(pais=> pais.length>6)
+const result2 = paises.filter(pais => pais.length > 6)
 console.log(result2)
+
+//.sort ordena segun codigo ascii
+
+let frutas = ['bananara', 'manzana', 'pera', 'sandia', 'naranja']
+frutas.sort()
+console.log(frutas)
+let puntos = [1, 2, 19, 21]
+puntos.sort()
+console.log(puntos)
+let cosas = ['2 perros', '2 Perros', '1 platano', '2 platanos']
+cosas.sort()
+console.log(cosas)
+
+//ordeno numeros pero como debe ser
+let puntos1 = [1, 12, 53, 4, 13, 19, 61, 12, 6]
+for (let i = 0; i < puntos1.length - 1; i++) {
+    for (let j = i + 1; j < puntos1.length; j++) {
+        if (puntos1[i] > puntos1[j]) {
+            let aux = puntos1[i]
+            puntos1[i] = puntos1[j]
+            puntos1[j] = aux
+        }
+    }
+}
+console.log(puntos1)
+
+let puntos2 = [1, 12, 53, 4, 13, 19, 61, 12, 6]
+puntos2.sort((a, b) => a - b)
+console.log(puntos2)
