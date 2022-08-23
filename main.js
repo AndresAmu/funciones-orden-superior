@@ -68,5 +68,17 @@ for (let i = 0; i < puntos1.length - 1; i++) {
 console.log(puntos1)
 
 let puntos2 = [1, 12, 53, 4, 13, 19, 61, 12, 6]
-puntos2.sort((a, b) => a - b)
+puntos2.sort(function (a, b) {
+    if (a < b) {
+        return -1
+    }
+    if (a > b) {
+        return 1
+    }
+    return 0
+})
 console.log(puntos2)
+
+let puntos3 = [1, 12, 53, 4, 13, 19, 61, 12, 6]
+puntos3.sort((a, b) => a - b)
+console.log(puntos3)
