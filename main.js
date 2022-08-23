@@ -107,3 +107,9 @@ const arrays = [12, 41, 5, 23, 2]
 const finds = arrays.findIndex(e => e < 3)
 console.log(finds)
 
+//.some devuelve un valor boleano
+
+const arraysome = [1, 2, 5, 6, 1, 3]
+//Quiero que me diga si dentro del array tengo algun numero entero
+const evento = arraysome.some(e => e % 2 === 0)
+console.log(evento)
