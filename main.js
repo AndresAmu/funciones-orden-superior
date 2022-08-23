@@ -27,3 +27,17 @@ double.forEach(function (d) {
 })
 
 double.forEach(d => console.log(d))
+
+//.filter
+
+const paises = ['Argentina', 'Uruguay', 'Brasil', 'Chile', 'Peru']
+
+//Forma larfa con function
+const result1 = paises.filter(function(pais){
+    return pais.length > 5
+})
+console.log(result1)
+
+//Forma corta con funcion =>
+const result2 = paises.filter(pais=> pais.length>6)
+console.log(result2)
