@@ -54,7 +54,7 @@ let cosas = ['2 perros', '2 Perros', '1 platano', '2 platanos']
 cosas.sort()
 console.log(cosas)
 
-//ordeno numeros pero como debe ser
+//ordeno numeros pero como debe ser forma larga
 let puntos1 = [1, 12, 53, 4, 13, 19, 61, 12, 6]
 for (let i = 0; i < puntos1.length - 1; i++) {
     for (let j = i + 1; j < puntos1.length; j++) {
@@ -67,6 +67,7 @@ for (let i = 0; i < puntos1.length - 1; i++) {
 }
 console.log(puntos1)
 
+// Forma mediana
 let puntos2 = [1, 12, 53, 4, 13, 19, 61, 12, 6]
 puntos2.sort(function (a, b) {
     if (a < b) {
@@ -79,6 +80,7 @@ puntos2.sort(function (a, b) {
 })
 console.log(puntos2)
 
+//Forma corta con =>
 let puntos3 = [1, 12, 53, 4, 13, 19, 61, 12, 6]
 puntos3.sort((a, b) => a - b)
 console.log(puntos3)
